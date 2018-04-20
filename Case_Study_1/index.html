@@ -27,7 +27,8 @@ function getPortfolio() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
-            var snehaData = JSON.parse(xhttp.responseText);
+            //Parse the data with JSON.parse(), and the data becomes a JavaScript object.
+            var snehaData = JSON.parse(xhttp.responseText); 
             document.getElementById('ajax_content').innerHTML = `<div class="col-md-3 left-part">
                 <div class="left-background">
                     <div class="text-main">
