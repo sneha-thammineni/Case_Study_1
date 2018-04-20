@@ -1,0 +1,21 @@
+{
+ "name": "Sneha Spandana",
+ "role": "Software Engineer",
+ "caption": "As someone who can identify the need of a customer for effective solutions. I am committed to high quality service that ensures a positive experience.",
+ "personality_title": "PERSONALITY HIGHLIGHTS",
+ "personality_list": { 
+        "point_1": "Cheerful disposition",
+        "point_2": "Neat and well organized",
+        "point_3": "Motivated by problem solving",
+        "point_4": "Independent worker",
+        "point_5": "Works well with deadlines",
+        "point_6": "Collaborative and efficient"
+    },
+    "contact_title": "CONTACT DETAILS",
+    "contact_info": "<h6> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </h6><h6>Lorem Ipsum is simply dummy text of the printing</h6><h6>Lorem Ipsum is simply dummy text of the printing</h6>",
+ "basic_title": "BASIC INFORMATION",
+ "basic_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+ "education_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+ "professional_title": "PROFESSIONAL EXPERIENCE",
+ "professional_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+}

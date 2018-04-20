@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>
+        Main Page
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <button class="btn btn-primary" id="get_Portfolio">Get Portfolio</button>
+        </div>
+        <div class="row" id="ajax_content"></div>
+    </div>
+</body>
+<script type="text/javascript">
+function getPortfolio() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+            var snehaData = JSON.parse(xhttp.responseText);
+            document.getElementById('ajax_content').innerHTML = `<div class="col-md-3 left-part">
+                <div class="left-background">
+                    <div class="text-main">
+                        <h3>${snehaData.name}</h3>
+                    </div>
+                    <div class="text-sub">
+                        <h4>${snehaData.role}</h4>
+                    </div>
+                    <div class="text-content">
+                        <p>${snehaData.caption}</p>
+                    </div>
+                </div>
+                <div class="left-paragraph">
+                    <h5>${snehaData.personality_title}</h5>
+                </div>
+                <div class="left-sub">
+                    <ul class="list-style">
+                    <li>${snehaData.personality_list.point_1}</li>
+            <li>${snehaData.personality_list.point_2}</li>
+            <li>${snehaData.personality_list.point_3}</li>
+            <li>${snehaData.personality_list.point_4}</li>
+            <li>${snehaData.personality_list.point_5}</li>
+            <li>${snehaData.personality_list.point_6}</li>
+            </ul>
+                </div>
+                <!--contact details part -->
+                <div class="left-paragraph">
+                    <h5>${snehaData.contact_title}</h5>
+                </div>
+                <div class="background-para">${snehaData.contact_info}</div>
+            </div>
+            <!-- Right part -->
+            <div class="col-md-9">
+                <div class="right-background">
+                    <div class="row">
+                        <div class="col-md-12 right-part">
+                            <div class="right-main">
+                                <h4>${snehaData.basic_title}</h4>
+                            </div>
+                            <div class="right-content">
+                                <p>${snehaData.basic_description}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 right-part-2">
+                            <div class="right-main">
+                                <h4>${snehaData.education_title}</h4>
+                            </div>
+                            <div class="right-content">
+                                <p>${snehaData.education_description}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 right-part-2">
+                            <div class="right-main-3">
+                                <h4>${snehaData.professional_title}</h4>
+                            </div>
+                            <div class="right-content">
+                                <p>${snehaData.professional_description}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+        }
+    }
+    xhttp.open('GET', 'data.json', true);
+    xhttp.send();
+}
+document.getElementById('get_Portfolio').addEventListener('click', getPortfolio, false);
+</script>
